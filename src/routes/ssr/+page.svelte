@@ -2,7 +2,7 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 	export let form;
-	import AddForm from './AddForm.svelte'
+	import AddForm from '../../lib/modules/AddForm.svelte'
 </script>
 
 <div>
