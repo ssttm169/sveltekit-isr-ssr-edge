@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { fail } from '@sveltejs/kit';
 
 

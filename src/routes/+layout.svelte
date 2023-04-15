@@ -1,22 +1,17 @@
 <script>
-	import '../app.css';
-	import Nav from '$lib/Nav.svelte';
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
+	import "../app.css";
+	import "../part1.css";
+	import "../global.css";
+	import "../settings.css";
+	import WindowContent from "../lib/modules/WindowContent.svelte";
 </script>
 
-<svelte:head>
-	<title>SvelteKit Deployment Configuration</title>
-	<meta name="description" content="Learn how to configuration your SvelteKit app to use Edge Functions, Serverless Functions, and Incremental Static Regeneration on Vercel" />
-</svelte:head>
-
-<div class="px-8 lg:px-0 h-screen flex flex-col justify-between">
-	<Header />
-	<div class="flex-grow w-full max-w-4xl mx-auto flex flex-col md:flex-row">
-		<Nav />
-		<div class="md:ml-12">
-			<slot />
-		</div>
+<div class="home_container__Myqoy">
+	<div class="home_sidebar__4L4yT home_sidebar-show__I77cg">
+		<!-- <button on:click={roll}>Roll the dice</button> -->
+		<slot />
 	</div>
-	<Footer />
+	<div class="home_window-content__RRVow">
+		<WindowContent />
+	</div>
 </div>
